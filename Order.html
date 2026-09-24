@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Place Your Order</title>
+</head>
+<body bgcolor="LemonChiffon">
+    <h1 align="center"> Place Your Order</h1>
+    <hr>
+    <br>
+    <nev>
+        <a href="http://127.0.0.1:5500/index.html">Home</a>  |
+        <a href="http://127.0.0.1:5500/Menu.html">Menu</a>  | 
+        <a href="Order.html">Order</a>  |
+        <a href="Contect.html">Contect</a>  |
+        <a href="http://127.0.0.1:5500/about%20page.html">About Page</a>
+    </nev>
+    <hr>
+    <br>
+    <form action="#" method="post">
+        <fieldset>
+            <legend align="center">Customer Information</legend><hr>
+            <label for="Fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your name"  required><br><br>
+            <label for="Email"> Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your gamil" required><br><br>
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="phone" name="Phone" placeholder="enter your number" required><br><br>
+            <label for="Address">Address:</label>
+            <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+        </fieldset>
+        <hr>
+        <br>
+        <fieldset>
+            <legend>Food Selection</legend>
+            <label for="Food">Select Food:</label>
+            <select id="food" name="food" required>
+                <option value=" ">---select--</option>
+                <option value="Pizza">Pizza</option>
+                <option valur="Burger">Burger</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Biryani">Biryani</option>
+            </select>
+            <br>
+            <br>
+        <label for="Quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+        <br>
+        <hr>
+       <br>
+        <p><b>Choose Size:</b></p>
+        <label for="Small">Small</label>
+        <input type="radio" id="small" name="size" value="Small" required>
+        <label for="Medium">Medium</labe>
+        <input type="radio" id="Medium" name="size" value="Meduim" required>
+        <label for="Large">Large</label>
+        <input type="radio" id="Large" name="size" value="Large" required>
+        <br> 
+        <hr>
+        <br>
+        <p><b>Extra Toppings:</b></p>
+        <label for="Extra Cheese">Extra Cheese</label>
+        <input type="checkbox" id="extra cheese" name="Topping" value="Extra Cheese">
+        <label for="Jalapeno">Jalapeno</label>
+        <input type="checkbox" id="jalapeno" name="Topping" value="jalapeno">
+        <label for="Mushroom">Mushroom</label>
+        <input type="checkbox" id="mushroom" name="Topping" value="mushroom">
+        <label for="Olives">Olives</label>
+        <input type="checkbox" id="Olives" name="Topping" value="Olives">
+        <label for="Extra Sauce">Extra Sauce</label>
+        <input type="checkbox" id="Extra Sauce" name="Topping" value="Extra Sauce">
+        <br>
+        <br>
+        <hr>
+        <p><b>Drinks:</b></p>
+        <label for="Drinks">Select Drinks:</label>
+        <br>
+        <select id="drinks" name="drinks" multiple size="4">
+            <option value="Coke">Coke</option>
+            <option value="Pepsi">Pepsi</option>
+            <option value="Cold Coffee">Cold Coffee</option>
+            <option value="Lemonade">Lemonade</option>
+        </select>
+        <br>
+        <br>
+         
+        <label for=" Date"><b>Delivery Date:</b></label><br>
+        <input type="Date" id="Date" name="delivery_date" required>
+        <br>
+        <br>
+        <label for="instructions">Delivery Instructions</label>
+        <textarea id="instructions" name="instructions" rows="4" cols="40" placeholder="Enter delivery instructions..."></textarea>
+        <br>
+        <hr>
+        <br>
+        <p><b>Payment Method:</b></p>
+        <label for="cod">Cash on Delivery</label>
+        <input type="radio" id="cash on delivery"  name="payment"  value="cob">
+        <label for="upi">UPI</label>
+        <input type="radio" id="Upi" name="payment"  value="upi">
+        <label for="card">Credit / devit card</label>
+        <input type="radio" id="card" name="payment" value="credit / devit card">
+        <br><hr>
+        <br>
+        <label for="coupon">Coupon Code:</label>
+        <input type="text" id="coupon" name="coupon" placeholder="Enter Coupon code">
+        <br>
+        <br>
+        <label for="term">Iagree to the Trem & Condition</label>
+        <input type="checkbox" id="term" name="term" required>
+   <br>
+   <br>
+        <button type="Submit">Place Order</button>
+        <button type="reset">Reset</button>
+
+        </fieldset>
+        <br>
+    </form>
+</body>
+</html>
